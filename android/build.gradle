@@ -17,7 +17,7 @@ buildscript {
 }
 
 plugins {
-  id 'org.jetbrains.kotlin.plugin.serialization' version '1.9.0' apply true
+  id 'org.jetbrains.kotlin.plugin.serialization'
 }
 
 def isNewArchitectureEnabled() {
@@ -76,10 +76,6 @@ android {
     release {
       minifyEnabled false
     }
-  }
-
-  lint {
-    disable "GradleCompatible"
   }
 
   compileOptions {
